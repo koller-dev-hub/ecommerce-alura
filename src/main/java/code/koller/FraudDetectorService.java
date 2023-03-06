@@ -27,12 +27,5 @@ public class FraudDetectorService {
             e.printStackTrace();
         }
         System.out.println("Order processed");
-
-    }
-
-    private static Properties properties() {
-        var properties = new Properties();
-        properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, FraudDetectorService.class.getSimpleName());
-        return properties;
     }
 }
